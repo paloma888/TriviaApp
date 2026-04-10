@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		E4F9DC962F88F48B008D330E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4F9DC5B2F85B0AC008D330E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4F9DC622F85B0AC008D330E;
+			remoteInfo = TriviaApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E4F9DC632F85B0AC008D330E /* TriviaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F9DC922F88F48B008D330E /* TriviaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = TriviaApp;
 			sourceTree = "<group>";
 		};
+		E4F9DC932F88F48B008D330E /* TriviaAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TriviaAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E4F9DC602F85B0AC008D330E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F9DC8F2F88F48B008D330E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E4F9DC652F85B0AC008D330E /* TriviaApp */,
+				E4F9DC932F88F48B008D330E /* TriviaAppTests */,
 				E4F9DC642F85B0AC008D330E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E4F9DC632F85B0AC008D330E /* TriviaApp.app */,
+				E4F9DC922F88F48B008D330E /* TriviaAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = E4F9DC632F85B0AC008D330E /* TriviaApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E4F9DC912F88F48B008D330E /* TriviaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F9DC982F88F48B008D330E /* Build configuration list for PBXNativeTarget "TriviaAppTests" */;
+			buildPhases = (
+				E4F9DC8E2F88F48B008D330E /* Sources */,
+				E4F9DC8F2F88F48B008D330E /* Frameworks */,
+				E4F9DC902F88F48B008D330E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4F9DC972F88F48B008D330E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E4F9DC932F88F48B008D330E /* TriviaAppTests */,
+			);
+			name = TriviaAppTests;
+			packageProductDependencies = (
+			);
+			productName = TriviaAppTests;
+			productReference = E4F9DC922F88F48B008D330E /* TriviaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					E4F9DC622F85B0AC008D330E = {
 						CreatedOnToolsVersion = 26.4;
+					};
+					E4F9DC912F88F48B008D330E = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = E4F9DC622F85B0AC008D330E;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				E4F9DC622F85B0AC008D330E /* TriviaApp */,
+				E4F9DC912F88F48B008D330E /* TriviaAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E4F9DC612F85B0AC008D330E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F9DC902F88F48B008D330E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4F9DC8E2F88F48B008D330E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4F9DC972F88F48B008D330E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4F9DC622F85B0AC008D330E /* TriviaApp */;
+			targetProxy = E4F9DC962F88F48B008D330E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E4F9DC772F85B0AE008D330E /* Debug */ = {
@@ -149,7 +224,6 @@
 				INFOPLIST_FILE = TriviaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -180,7 +254,6 @@
 				INFOPLIST_FILE = TriviaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +392,46 @@
 			};
 			name = Release;
 		};
+		E4F9DC992F88F48B008D330E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paloma.TriviaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriviaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TriviaApp";
+			};
+			name = Debug;
+		};
+		E4F9DC9A2F88F48B008D330E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paloma.TriviaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriviaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TriviaApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +449,15 @@
 			buildConfigurations = (
 				E4F9DC772F85B0AE008D330E /* Debug */,
 				E4F9DC782F85B0AE008D330E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F9DC982F88F48B008D330E /* Build configuration list for PBXNativeTarget "TriviaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F9DC992F88F48B008D330E /* Debug */,
+				E4F9DC9A2F88F48B008D330E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
