@@ -53,3 +53,5 @@ Swift, UIKit, URLSession, Codable, UIActivityViewController, MVC, XCTest, Open T
   - Local high score tracking using UserDefaults so users can see their best scores across sessions.
 - Increased test coverage
 
+## Demo (3x):
+<img src="demo.gif" width="300">
