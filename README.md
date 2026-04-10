@@ -27,13 +27,12 @@ Requirements: A Mac with Xcode 15 or later installed. Network access needed.
 Development began with a written project proposal covering functionality, tech stack, component breakdown, and potential risks before any code was written. A simple wireframe was sketched out for all three screens prior to implementation to inform layout decisions in code.
 
 Wireframe:
+![Wireframe](wireframe.png)
 
 Project Proposal:
 The full proposal is included in this repository as PROPOSAL.md
 
-
 Architecture:
-
 The app follows the MVC (Model-View-Controller) pattern, the standard architecture for iOS development.
 
 
