@@ -26,11 +26,7 @@ Requirements: A Mac with Xcode 15 or later installed. Network access needed.
 
 Development began with a written project proposal covering functionality, tech stack, component breakdown, and potential risks before any code was written. A simple wireframe was sketched out for all three screens prior to implementation to inform layout decisions in code.
 
-Wireframe:
-![Wireframe](wireframe.png)
-
-Project Proposal:
-The full proposal is included in this repository as PROPOSAL.md
+The wireframe and full proposal are included in this repository as PROPOSAL.md
 
 Architecture:
 The app follows the MVC (Model-View-Controller) pattern, the standard architecture for iOS development.
@@ -57,11 +53,3 @@ Swift, UIKit, URLSession, Codable, UIActivityViewController, MVC, XCTest, Open T
   - Local high score tracking using UserDefaults so users can see their best scores across sessions.
 - Increased test coverage
 
-
-## Challenges:
-- Zero prior Swift experience:
-  - This project was built with no previous Swift or iOS development experience. I approached this by first exploring some key differences between Swift and my previous experience with React Native. After establishing a basic understanding, I learned concepts incrementally as they were needed, rather than trying to understand everything upfront.
-- Answer index timing bug:
-  - When a wrong answer was selected, the correct answer was not highlighting because submitAnswer() was advancing the question index before showCorrectAnswer() could reference the current question. This was fixed by checking correctness against the question directly before calling submitAnswer().
-- API rate limiting during integration tests:
-  - Integration tests were failing intermittently because the API enforces a rate limit when hit too frequently in quick succession. This was diagnosed by noticing the failing tests were completing suspiciously fast, indicating the API was rejecting requests. The fix was to restructure the test suite to make a single shared network request, with all dependent tests reusing that result.
