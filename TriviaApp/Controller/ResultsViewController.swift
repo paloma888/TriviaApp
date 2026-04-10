@@ -127,8 +127,8 @@ class ResultsViewController: UIViewController {
     private func showResults() {
         scoreLabel.text = "You scored \(score) points!"
         //Appromixation of percentage 
-        let percent = Double(amountCorrect) / Double(15) * 100
-        percentLabel.text = "Your accuracy was \(Int(percent.rounded())) percent"
+        let percent = Double(amountCorrect) / Double(10) * 100
+        percentLabel.text = "Your accuracy was \(Int(percent.rounded()))%"
         switch percent {
         case 90...:
             emojiLabel.text = "👑"
